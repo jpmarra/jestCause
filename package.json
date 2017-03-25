@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server/server.js",
-    "test": "test"
+    "test": "karma start specs/tests.js --reporter nyan",
+    "test:j": "jasmine specs/tests.js"
   },
   "repository": {
     "type": "git",
@@ -56,7 +57,12 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-nodemon": "^0.4.2",
     "jasmine": "^2.5.3",
-    "karma": "^1.5.0"
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-nyan-reporter": "^0.2.5",
+    "karma-requirejs": "^1.1.0"
   },
   "config": {
     "commitizen": {

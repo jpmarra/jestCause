@@ -20,6 +20,10 @@ angular.module('hang.eventpage', [])
          })
       })
     }
+    
+    $scope.returnOne = function() {
+      return 'one';
+    }
 
     $scope.getAttendees($scope.currentEvent.id);
 
